@@ -1,0 +1,31 @@
+<!--Enkel budsjettplanlegger hvor brukeren kan legge inn inntekter og utgifter-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Budsjettplanlegger</title>
+</head>
+<body>
+    <h1>Budsjettplanlegger</h1>
+<!--Viser totalsummer-->
+    <p id="inntektSum"></p>
+    <p id="utgiftSum"></p>
+    <p id="saldo"></p>
+<!--Her vises alle poster-->
+    <div id="liste"></div>
+<!--Inputfelt for å legge inn ny post-->
+    <input id="tekst" placeholder="Beskrivelse">
+    <input id="belop" placeholder="Beløp">
+<!--Velger om posten er inntekt eller utgift-->
+    <select id="type">
+    <option value="inntekt">Inntekt</option>
+    <option value="utgift">Utgift</option>
+    </select>
+<!--Når brukeren klikker på knappen, kalles funksjonen leggtilPost i JS-->
+    <button onclick="leggTilPost()">Legg til</button>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
